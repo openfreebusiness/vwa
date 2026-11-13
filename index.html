@@ -73,7 +73,7 @@
 const base='https://victorywithash.com/';
 function urlFor(slug){return base+(slug?slug+'/':'')+'?referredCode=WV5CFX0Z8P'}
 function inviteUrl(){return urlFor('capture-page-v-learning')}
-const formal=`Hello,\nI hope you're doing well.\n\nMy name is VINEETH, and I’m currently using the Victory With Ash system. I would like to invite you to join and explore the platform.\n\nRegister using this link:\n${inviteUrl()}\n\nLooking forward to having you on board.\nBest regards,\nCHEGURI VINEETH\nVICTORY WITH ASH SYSTEM`;
+const formal=`Hello,\nI hope you're doing well.\n\nMy name is VINEETH, and I’m currently using the Victory With Ash system. I would like to invite you to join and explore the platform.\n\nRegister using this link:\n${inviteUrl()}\n\nLooking forward to having you on board.\nBest regards,\n VINEETH\nVICTORY WITH ASH SYSTEM`;
 const friendly=`Hi!\nI’m exploring Victory With Ash and thought you might like to check it out too. It’s a learning platform to help you keep growing, one step at a time.\n\nJoin here:\n${inviteUrl()}\n\nWould love to hear what you think!\n— Vineeth`;
 const informal=`Hey! 👋\nI found a learning platform called Victory With Ash and wanted to share it with you. Have a look and see if it’s useful for your goals.\n\nJoin here: ${inviteUrl()}\n\n— Vineeth`;
 function updateTemplate(){let p=document.getElementById('platform').value,t=document.getElementById('tone').value;let text=t==='Formal'?formal:t==='Friendly'?friendly:informal;document.getElementById('template').innerText=text}
